@@ -14,34 +14,45 @@ El presente laboratorio consiste en la automatización de pruebas funcionales co
 
 ## Actividades
 
-1. Implementar Casos de prueba para la funcionalidad "Percentage Calculator"
+### 1. Implementar Casos de prueba para la funcionalidad "Percentage Calculator"
 
-    * Diseñar casos de prueba: Entradas, proceso, Resultado Esperado
-    * Implementar los scripts de prueba
-    
-    ![Script de pruebas](docs/03_script.png)
+* Diseñar casos de prueba: Entradas, proceso, Resultado Esperado
+* Implementar los scripts de Selenium en el archivo `percentage.js`
 
-    * Ejecutar los scripts de prueba
-    
-    ![Ejecución de script](docs/02_reporte_consola.png)
+![Script de pruebas](docs/03_script.png)
 
-    * Reportar los resultados de la ejecución
+* Ejecutar los scripts de prueba
 
-    ![Reporte de resultados](docs/01_reporte_pruebas_funcionales.png)
+![Ejecución de script](docs/02_reporte_consola.png)
+
+* Reportar los resultados de la ejecución
+
+![Reporte de resultados](docs/01_reporte_pruebas_funcionales.png)
 
 
-2. Configurar Browser-specific WebDriver 
+### 2. Configurar Browser-specific WebDriver 
 
-    * Descarga de Selenium Driver Web for Chrome de la página <https://chromedriver.storage.googleapis.com/index.html>
+* Descarga de Selenium Driver Web for Chrome de la página <https://chromedriver.storage.googleapis.com/index.html>
 
-    ![Descarga Selenium Web Driver for Chrome](docs/04_descarga_driver.png)
+![Descarga Selenium Web Driver for Chrome](docs/04_descarga_driver.png)
 
-    * Descomprimir en una carpeta para luego agregar al PATH del sistema en Windows.
+* Descomprimir en una carpeta para luego agregar al PATH del sistema en Windows.
 
-    ![Carpeta WebDriver](docs/05_carpetawebdriver.png)
+![Carpeta WebDriver](docs/05_carpetawebdriver.png)
 
-    * Agregar el directorio al PATH del sistema
+* Agregar el directorio al PATH del sistema
 
-        > `setx PATH "%PATH%;C:\WebDriver\bin"`
+    > `setx PATH "%PATH%;C:\WebDriver\bin"`
 
-    
+### 3. Integrar con xUnit
+
+* Instalación de Jest mediando NPM
+    > `npm i --save-dev jest`
+
+* Script de prueba, archivo `percentage.test.js`
+
+    ![Código con Jest](docs/06_code_jest.png)
+
+* Reporte de consola de los resultados:
+
+    ![Reporte Jest](docs/07_results_jest.png)
